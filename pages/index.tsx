@@ -1,10 +1,16 @@
 import type { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import styles from '../styles/Home.module.css'
+import { io } from 'socket.io-client'
+import { useEffect } from 'react'
+
+const socket = io();
 
 const Home: NextPage = () => {
   const router = useRouter()
-
+  useEffect(() => {
+    socket.emit('connection')
+  }, [])
   const onFileLoad = () => {
     router.push(`/room/${123}`)
   }
