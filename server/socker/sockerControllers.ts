@@ -1,4 +1,4 @@
-import { Rooms } from '../model/room'
+import { Rooms } from '../model/rooms'
 
 export const createRoom = (rooms: Rooms, roomId: string) => {
   rooms.createRoom(roomId)

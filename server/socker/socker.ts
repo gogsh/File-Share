@@ -1,6 +1,6 @@
 import * as socketio from 'socket.io'
 import * as http from 'http'
-import { Rooms } from '../model/room'
+import { Rooms } from '../model/rooms'
 import { createRoomListener, joinRoomListener } from './sockerListeners'
 
 const socker = (server: http.Server) => {

@@ -1,5 +1,5 @@
 import * as socketio from 'socket.io'
-import { Rooms } from '../model/room'
+import { Rooms } from '../model/rooms'
 import { createRoom, joinRoom } from './sockerControllers'
 
 export const createRoomListener = (socket: socketio.Socket, rooms: Rooms) => {
